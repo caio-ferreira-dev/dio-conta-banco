@@ -1,9 +1,10 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
         // Creating the scanner object to read terminal inputs.
-        Scanner ScanObj = new Scanner(System.in);
+        Scanner ScanObj = new Scanner(System.in).useLocale(Locale.US);
     
         // Getting terminal inputs data.
         System.out.println("Por favor, digite o nome do cliente !");
